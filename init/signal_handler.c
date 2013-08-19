@@ -57,7 +57,7 @@ static int wait_for_one_process(int block)
 
     svc = service_find_by_pid(pid);
     if (!svc) {
-        ERROR("untracked pid %d exited\n", pid);
+        NOTICE("untracked pid %d exited\n", pid);
         return 0;
     }
 
